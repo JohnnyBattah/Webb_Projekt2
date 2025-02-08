@@ -4,14 +4,24 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    background-image: url();
 }
 
 header {
     background-color: #5383B8;
     text-align: center;
-    height: 13vh;
+    height: 10vh;
     width: 100vw;
-    border: 2px solid black;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    display: none;
+    max-width: 80px;
+    max-height: 100px;
 }
 
 h1 {
@@ -30,11 +40,12 @@ h1 {
     font-size: smaller;
 }
 
-.varukorg-div{
+.varukorg-div {
     margin-left: auto;
 }
 
-.Kontakt-div, footer{
+.Kontakt-div,
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,3 +53,31 @@ h1 {
     align-items: center;
 }
 
+article img {
+    width: 40vw;
+    display: block;
+    margin: auto;
+}
+
+main h2 {
+    font-family: "Passion One", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.Produkt-Rubrik{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.Produkt-Beskrivning {
+    max-width: 300px;
+    text-align: center;
+}
+
+aside{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
