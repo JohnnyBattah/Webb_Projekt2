@@ -4,7 +4,10 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background-image: url();
+
+    background-image: url(img/Ljusare-Bakgrundsbild.webp);
+    background-size: cover;
+    background-position: center;
 }
 
 header {
