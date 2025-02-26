@@ -212,7 +212,44 @@ aside{
 @media only screen and (min-width: 1024px){
     body{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 20px 150px 150px 150px auto 100px 70vh;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 20px 150px 160px 150px 100vh 70vh;
     }
+    #rabatt-text{
+        grid-row: 1/2;
+        grid-column: 2/3;
+        text-align: center;
+    }
+    header{
+        grid-row: 2/3;
+        grid-column: 1/4;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+    }
+    header img{
+        display: flex;
+        margin: 5px;
+        min-height: 100px;
+        min-width: 120px;
+    }
+    .start-bild-dator-div, #start-bild-dator{
+        grid-row: 3/4;
+        grid-column: 2/3;
+        max-height: 170px;
+        display: block;
+        margin-left: 80px;
+        max-height: 150px;
+    }
+    #meny{
+        grid-row: 3/4;
+        grid-column: 3/4;
+        margin-right: 40px;
+    }
+    main, footer, aside, .start-bild-div, #produkter-div{
+        display: none;
+    }
+
 }
