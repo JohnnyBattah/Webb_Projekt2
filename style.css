@@ -126,12 +126,15 @@ main h2 {
     text-align: center;
 }
 
+.Produkt-Pris{
+    color: #e8801e;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
 aside{
     margin-bottom: 60px;
 }
-
-
-
 
 
 /* Style för tablet */
