@@ -110,6 +110,11 @@ main h2 {
     border-radius: 15px;
 }
 
+.Köp-knapp:hover, #meny_knapp:hover, #Varukorg:hover{
+    background-color: #ff474c;
+    transform: scale(1.05);
+}
+
 #Varukorg{
     padding: 5px;
     font-size: 2rem;
@@ -212,8 +217,8 @@ aside{
 @media only screen and (min-width: 1024px){
     body{
         display: grid;
-        grid-template-columns: 1fr 4fr 1fr;
-        grid-template-rows: 20px 150px 160px 150px 100vh 70vh;
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-rows: 20px 150px 160px auto 120vh;
     }
     #rabatt-text{
         grid-row: 1/2;
@@ -235,21 +240,50 @@ aside{
         min-height: 100px;
         min-width: 120px;
     }
+    .start-bild-div{
+        display: none;
+    }
     .start-bild-dator-div, #start-bild-dator{
         grid-row: 3/4;
         grid-column: 2/3;
         max-height: 170px;
-        display: block;
-        margin-left: 80px;
+        display: flex;
         max-height: 150px;
+        width: 700px;
+        margin: auto;
     }
     #meny{
         grid-row: 3/4;
         grid-column: 3/4;
         margin-right: 40px;
     }
-    main, footer, aside, .start-bild-div, #produkter-div{
-        display: none;
+    aside{
+        grid-row: 3/4;
+        grid-column: 1/2;
+        text-align: center;
+        margin: 0 0 0 10px;
     }
-
+    aside button{
+        margin: 10px;
+    }
+    main{
+        grid-row: 4/5;
+        grid-column: 1/4;
+        margin-top: 80px;
+    }
+    .Produkt-Bilderna{
+        width: 80%;
+        max-width: 200px;
+    }
+    #produkter-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+    }   
+    .Produkt-Beskrivning{
+        margin-left: 60px;
+    }
+    footer{
+        grid-row: 5/6;
+        grid-column: 1/4;
+    }
 }
