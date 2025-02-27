@@ -26,7 +26,7 @@
     <div id="meny">
         <button id="meny_knapp">≡ menu</button>
         <div id="meny-content">
-            <button id="Varukorg">🛒</button>
+            <button id="Varukorg" onclick="visaVarukorg()">🛒</button>
             <a target="_blank" id="Logga-in"
                 href="https://www.skolverket.se/regler-och-ansvar/lararlegitimation-och-forskollararlegitimation">Logga
                 in</a>
@@ -143,6 +143,15 @@
         <p>© Doftimperiet</p>
 
     </footer>
+
+    <div id="varukorg-container">
+        <div id="varukorg-div">
+            <h2>Varukorg</h2>
+            <p>Din varukorg är tom</p>
+            <button id="stäng-varukorg" onclick="döljVarukorg()">Stäng</button>
+        </div>
+    </div>
+
 </body>
 
 </html>

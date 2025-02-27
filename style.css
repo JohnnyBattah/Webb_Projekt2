@@ -137,6 +137,32 @@ aside{
 }
 
 
+
+#varukorg-container{
+    position: fixed;
+    top: 0;
+    right: -100%; 
+    width: 30%;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
+    transition: right 0.4s ease-in-out;
+    padding: 20px;
+}
+
+#varukorg-div {
+    width: 100%;
+    height: 100%;
+}
+
+/* När varukorgen är öppen */
+#varukorg-container.open {
+    right: 0;
+}
+
+
+
+
 /* Style för tablet */
 @media only screen and (min-width: 767px) and (max-width: 1023px){
     body{
