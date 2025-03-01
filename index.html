@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <p id="rabatt-text">10% RABATT för köp över 1999:-</p>
+    <p id="rabatt-text">10% RABATT för köp över 3000:-</p>
     <header>
         <img src="img/Parfym1.webp" alt="Bild på en parfym">
         <h1>Doftimperiet</h1>
@@ -52,7 +52,7 @@
                 <img class="Produkt-Bilderna" src="img/Produkt1.webp" alt="Parfym 1">
                 <p class="Produkt-Beskrivning">En ikonisk och kraftfull doft med noter av ananas, björk och mysk.</p>
                 <p class="Produkt-Pris">Pris: 3500:-</p>
-                <button class="Köp-knapp">Köp</button>
+                <button id="knapp1" class="Köp-knapp">Köp</button>
             </article>
 
             <article>
@@ -60,7 +60,7 @@
                 <img class="Produkt-Bilderna" src="img/Produkt2.webp" alt="Parfym 2">
                 <p class="Produkt-Beskrivning">Fräsch och exklusiv med citrus, vetiver och ambra.</p>
                 <p class="Produkt-Pris">Pris: 3000:-</p>
-                <button class="Köp-knapp">Köp</button>
+                <button id="knapp2" class="Köp-knapp">Köp</button>
             </article>
 
             <article>
@@ -68,7 +68,7 @@
                 <img class="Produkt-Bilderna" src="img/Produkt3.webp" alt="Parfym 3">
                 <p class="Produkt-Beskrivning">En sofistikerad doft med oud, sandelträ och vanilj.</p>
                 <p class="Produkt-Pris">Pris: 2500:-</p>
-                <button class="Köp-knapp">Köp</button>
+                <button id="knapp3" class="Köp-knapp">Köp</button>
             </article>
 
             <article>
@@ -76,7 +76,7 @@
                 <img class="Produkt-Bilderna" src="img/Produkt4.webp" alt="Parfym 4">
                 <p class="Produkt-Beskrivning">En lyxig blandning av tobak, honung och vanilj med en hint av citrus.</p>
                 <p class="Produkt-Pris">Pris: 2700:-</p>
-                <button class="Köp-knapp">Köp</button>
+                <button id="knapp4" class="Köp-knapp">Köp</button>
             </article>
 
             <article>
@@ -84,7 +84,7 @@
                 <img class="Produkt-Bilderna" src="img/Produkt5.webp" alt="Parfym 5">
                 <p class="Produkt-Beskrivning">Kryddig och rökig med oregano, rökelse och läder.</p>
                 <p class="Produkt-Pris">Pris: 3200:-</p>
-                <button class="Köp-knapp">Köp</button>
+                <button id="knapp5" class="Köp-knapp">Köp</button>
             </article>
 
             <article>
@@ -92,7 +92,7 @@
                 <img class="Produkt-Bilderna" src="img/Produkt6.webp" alt="Parfym 6">
                 <p class="Produkt-Beskrivning">Mystisk och djup med mörk choklad, rom och kaffe.</p>
                 <p class="Produkt-Pris">Pris: 3400:-</p>
-                <button class="Köp-knapp">Köp</button>
+                <button id="knapp6" class="Köp-knapp">Köp</button>
             </article>
         </div>
     </main>
@@ -147,8 +147,9 @@
     <div id="varukorg-container">
         <div id="varukorg-div">
             <h2>Varukorg</h2>
-            <p>Din varukorg är tom</p>
-            <button id="stäng-varukorg" onclick="döljVarukorg()">Stäng</button>
+            <div id="varukorg-innehåll"></div>
+            <button id="stäng-varukorg" onclick="döljVarukorg()">❌</button>
+            <p id="total-pris">Total: 0:-</p>
         </div>
     </div>
 
