@@ -44,8 +44,8 @@ function läggTillIVarukorg(namn, pris){
         namn: namn,
         pris: pris
     };
-
     varukorg.push(produkt); // Lägger produkten i varukorgen
+    sparaVarukorg(); // Sparar varukorgen i localstorage    
     uppdateraVarukorg(); // Uppdaterar innehållet i varukorgen
 }
 
