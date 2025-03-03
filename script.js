@@ -92,3 +92,9 @@ document.querySelector("#knapp5").addEventListener("click", function(){
 document.querySelector("#knapp6").addEventListener("click", function(){
     läggTillIVarukorg("Kilian Black Phantom", 3400);
 });
+
+function tömVarukorg(){
+    varukorg = []; // Tömmer varukorgen
+    sparaVarukorg(); // Sparar varukorgen i localstorage
+    uppdateraVarukorg(); // Uppdaterar varukorgen i HTML
+}
