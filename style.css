@@ -151,6 +151,15 @@ aside{
 #varukorg-div {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* Gömmer allt som är utanför varukorgens gräns */
+    overflow: hidden;
+}
+
+#varukorg-div button{
+    margin: 5px;
+    width: 100px;
 }
 
 /* När varukorgen är öppen */
@@ -169,12 +178,23 @@ aside{
     transform: scale(1.05);
 }
 
+#varukorg-innehåll{
+    /* Produkterna ska ta upp all tillgänglig plats i id:n varukorg-div  */
+    flex-grow: 1;
+    /* En vertikal skroll lista visas om det blir många varor i varukorge */
+    overflow-y: auto; 
+    max-height: 60vh;
+    padding: 10px;
+    background-color: rgb(250, 250, 250);
+}
+
 #total-pris{
     font-weight: bolder;
 }
 
-
-
+a:hover{
+    color: red;
+}
 
 
 
