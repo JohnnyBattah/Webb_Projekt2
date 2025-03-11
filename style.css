@@ -280,7 +280,7 @@ a:hover{
 @media only screen and (min-width: 1024px){
     body{
         display: grid;
-        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-columns: 2fr 5fr 1fr;
         grid-template-rows: 20px 150px 160px auto 120vh;
     }
     #rabatt-text{
@@ -315,7 +315,7 @@ a:hover{
         display: flex;
         max-height: 150px;
         width: 700px;
-        margin: auto;
+        
     }
     #meny{
         grid-row: 3/4;
